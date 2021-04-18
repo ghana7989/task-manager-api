@@ -1,28 +1,35 @@
 {
-  "name": "task-manager",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^8.2.0",
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
-    "mailgun-js": "^0.22.0",
-    "mongodb": "^3.1.10",
-    "mongoose": "^5.3.16",
-    "multer": "^1.4.2",
-    "sharp": "^0.28.1",
-    "validator": "^10.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
-  }
+	"name": "task-manager",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js",
+		"test": "env-cmd -f ./src/test.env jest --runInBand --forceExit"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"dotenv": "^8.2.0",
+		"env-cmd": "^10.1.0",
+		"express": "^4.16.4",
+		"jsonwebtoken": "^8.4.0",
+		"mailgun-js": "^0.22.0",
+		"mongodb": "^3.1.10",
+		"mongoose": "^5.3.16",
+		"multer": "^1.4.2",
+		"sharp": "^0.28.1",
+		"validator": "^10.9.0"
+	},
+	"devDependencies": {
+		"jest": "^26.6.3",
+		"nodemon": "^1.18.9",
+		"supertest": "^6.1.3"
+	}
 }

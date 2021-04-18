@@ -17,7 +17,7 @@ const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: DOMAIN})
 const sendWelcomeEmail = function (email, name) {
 	const data = {
 		to: email,
-		from: 'Ghana <me@samples.mailgun.org>',
+		from: 'Ghana <chindukuripavan@gmail.com>',
 		subject: 'Thanks for joining in! Welcome.',
 		text: `Welcome to the app, ${name}. Let me know if you have any questions`,
 	}
